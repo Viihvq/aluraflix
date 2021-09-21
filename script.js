@@ -13,8 +13,15 @@
 //     document.write("<p>"+listaFilmes[indice]+"</p>")
 // }
 
-var listaFilmes = ["https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FM%2FMV5BMTAxNDYxMjg0MjNeQTJeQWpwZ15BbWU3MDcyNTk2OTM%40._V1_UY1200_CR89%2C0%2C630%2C1200_AL_.jpg&f=1&nofb=1"];
+// var listaFilmes = ["https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FM%2FMV5BMTAxNDYxMjg0MjNeQTJeQWpwZ15BbWU3MDcyNTk2OTM%40._V1_UY1200_CR89%2C0%2C630%2C1200_AL_.jpg&f=1&nofb=1"];
 
-for(var i = 0; i<listaFilmes.length; i++){
-     document.write("<img src="+listaFilmes[i]+">")
+// for(var i = 0; i<listaFilmes.length; i++){
+//  //    document.write("<img src="+listaFilmes[i]+">")
+// }
+
+function adicionarFilme(){
+     var campoFilmeFavorito = document.getElementById("filme").value;
+     var elementoFilmeFavorito = "<img src="+campoFilmeFavorito+">";
+     var elementoListaFilmes = document.getElementById("listaFilmes");
+     elementoListaFilmes.innerHTML = elementoFilmeFavorito;
 }
